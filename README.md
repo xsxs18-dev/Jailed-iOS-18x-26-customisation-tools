@@ -1,4 +1,4 @@
-#iOS 18x-26 jailed customization tools
+# iOS 18x-26 jailed customization tools
 # iOS System Customization, SparseRestore & Jailbreak Ecosystem (iOS 16.0 - iOS 26.x)
 
 A curated, legally compliant directory documenting advanced system customization utilities, MobileGestalt modding suites, entry-level entitlement bypass frameworks, and specific jailbreak environments for modern iOS branches (including iOS 18.x up to early iOS 26.x iterations). 
