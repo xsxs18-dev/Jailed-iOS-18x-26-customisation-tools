@@ -5,9 +5,9 @@ A curated, legally compliant directory documenting advanced system customization
 
 These utilities leverage native backup manipulation patterns (`SparseRestore`), backup injection mechanisms, MDM configuration profiles, native iOS Shortcuts, or specific kernel exploit chains (such as the `DarkSword` webkit/kexploit stack) to execute modifications without relying on standard Apple Developer account limitations.
 
-## 📄 Legal Disclaimer & Independent Compliance Notice
+## ⚠️Legal Disclaimer & Independent Compliance Notice
 **CRUCIAL NOTICE:** This repository functions strictly as an independent, educational directory and informational index. The maintainer of this repository has **absolutely no affiliation, partnership, or connection with the developers, entities, or actions** of the projects listed below (including but not limited to jailbreak.party, zeroxjf, the creator of FilzaJailedDS, lunginspector, Lars Fröder (opa334), or individual security research groups). 
-
+>  This repository is for educational and research purposes only. Using these tools may violate Apple's Terms of Service and is done entirely at your own risk. The maintainer is not responsible for any bootloops, data loss, or bricked devices.
 The maintainer does not condone, support, or take responsibility for how these third-party tools are operated, deployed, updated, or maintained by their respective creators. Any execution of kernel-level modifications, jailbreaks, MDM configuration installations, Shortcut actions, Package Managers, or unsandboxed file system modifications is performed strictly at the user's own risk. The maintainer is not liable for data loss, hardware instability, system boot loops, or security vulnerabilities resulting from external exploit implementations.
 
 This repository hosts no proprietary binary files, copyrighted enterprise profiles, encryption keys, or modified application bundles (.IPAs). Use these tools at your own discretion; data back-ups are highly recommended before invoking low-level system configuration writes.
