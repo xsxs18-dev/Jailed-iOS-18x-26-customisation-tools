@@ -18,7 +18,7 @@ This repository hosts no proprietary binary files, copyrighted enterprise profil
 
 | Project Name | Supported Versions | Key Functionality & Exploit Vector | Official Open-Source Link |
 | :--- | :--- | :--- | :--- |
-| **cyanide-ios** | iOS 18.0+ | Advanced open-source **Jailed Package Manager** designed to organize, queue, and deploy non-jailbreak modifications and themes directly to the device. | [GitHub Repository](https://github.com/zeroxjf/cyanide-ios) |
+| **cyanide-ios** | iOS 18.0+ | Advanced open-source **Jailed Package Manager** designed to organize, queue, and deploy non-jailbreak modifications and tweaks directly to the device. | [GitHub Repository](https://github.com/zeroxjf/cyanide-ios) |
 | **FilzaJailedDS** | iOS 18.0 - 26.x | Powerful **unsandboxed** file manager utilizing modern kernel vulnerabilities to grant full **read/write (R/W)** root file system access on modern iOS versions. | [GitHub Repository](https://github.com/34306/FilzaJailedDS) |
 | **Dopamine** | iOS 15.0 - 16.6.1 / **iOS 18.x (A11 Specific)** | Advanced rootless jailbreak environment. Extended via community implementations to leverage the `DarkSword` exploit chain specifically on legacy A11 hardware running iOS 18 branches. | [GitHub Repository](https://github.com/opa334/Dopamine) |
 | **Accessible** | iOS 16.0+ | A jailed file system utility functioning entirely as an **iOS Shortcut**. It requires no exploits and safely enables browsing, viewing, and exporting hidden internal system apps and readable root partitions (e.g., `/System`). | [GitHub Repository](https://github.com/jailbreakdotparty/Accessible) |
