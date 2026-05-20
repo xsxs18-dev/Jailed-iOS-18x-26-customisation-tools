@@ -52,8 +52,6 @@ To execute structural data writes via `SparseRestore` or desktop frameworks (`Nu
 
 For bleeding-edge testing binaries, direct workflow logs, and uncompiled alpha/beta builds (such as active *dirtyZero 1.4 betas* or raw *PocketPoster* configurations), consult the core developer network index:
 
-* **Official Development Portal:** [jailbreak.party on GitHub](https://github.com/jailbreakdotparty)
-* **Interactive Community Node:** Verification pipelines and distribution packages are mirrored dynamically via the community's primary Discord communications relay.
 
 ---
 *Trademarks: iOS, iPadOS, Shortcuts, CoreTrust, Filza, Cyanide, and Dopamine are legal property of Apple Inc. and their respective original developers. This independent documentation directory maintains no corporate affiliation, endorsement, or responsibility regarding the external developers, third-party repositories, or their specific software actions.* 
