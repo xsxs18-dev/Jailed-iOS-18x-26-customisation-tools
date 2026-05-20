@@ -30,7 +30,7 @@ This repository hosts no proprietary binary files, copyrighted enterprise profil
 | **SparseBoxPlus** | iOS 17.4 - 26.1+ | Community-driven refined iteration of SparseBox featuring an overhauled UI layout and modernized compliance updates. | [GitHub Distribution](https://github.com/jailbreakdotparty/SparseBoxPlus) |
 | **BlacklistBeGone** | iOS 16.0 - 18.0.1+ | Desktop automation script utilizing SparseRestore to swap certificate validity databases with directories, preventing revoke tracking. | [GitHub Repository](https://github.com/jailbreakdotparty/BlacklistBeGone) |
 | **Bridge** | iOS 16.0+ | Jailed internal system app launcher and asset extractor utility for auditing hidden core binaries. | [GitHub Distribution](https://github.com/jailbreakdotparty/Bridge) |
-| **dirtyZero** | iOS 16.0+ | Core development framework focusing on backup-layer property list injection techniques. (Active Beta branches hosted via Discord). | [GitHub Distribution](https://github.com/jailbreakdotparty/dirtyZero) |
+| **dirtyZero** | iOS 16.0+ | Core development framework focusing on backup-layer property list injection techniques. (Supports iOS 18+ now). | [GitHub Distribution](https://github.com/jailbreakdotparty/dirtyZero) |
 | **Cowabunga Lite** | iOS 15.0 - 18.x+ | Desktop-driven backup modification manager. Customizes system configurations, icon themes, and control centers without on-device profiles. | [GitHub Repository](https://github.com/leminlimez/CowabungaLite) |
 
 ---
