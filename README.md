@@ -1,57 +1,33 @@
-# iOS 18x-26 jailed customization 
-# iOS System Customization, SparseRestore & Jailbreak Ecosystem (iOS 18x - iOS 26.x)
+# Jailed iOS 18.x – 26 Customisation Tools
 
-A curated, legally compliant directory documenting advanced system customization utilities, MobileGestalt modding suites, entry-level entitlement bypass frameworks, and specific jailbreak environments for modern iOS branches (including iOS 18.x up to early iOS 26.x iterations). 
+A running list of jailbreak and jailbreak-adjacent customisation tools that actually work on iOS 18 through 26. Everything below has been checked against its current GitHub repo, so version support and links should be accurate as of **September 13, 2026**.
 
-These utilities leverage native backup manipulation patterns (`SparseRestore`), backup injection mechanisms, MDM configuration profiles, native iOS Shortcuts, or specific kernel exploit chains (such as the `DarkSword` webkit/kexploit stack) to execute modifications without relying on standard Apple Developer account limitations.
-
-## ⚠️Legal Disclaimer & Independent Compliance Notice
-**CRUCIAL NOTICE:** This repository functions strictly as an independent, educational directory and informational index. The maintainer of this repository has **absolutely no affiliation, partnership, or connection with the developers, entities, or actions** of the projects listed below (including but not limited to jailbreak.party, zeroxjf, the creator of FilzaJailedDS, lunginspector, Lars Fröder (opa334), or individual security research groups). 
->  This repository is for educational and research purposes only. Using these tools may violate Apple's Terms of Service and is done entirely at your own risk. The maintainer is not responsible for any bootloops, data loss, or bricked devices.
-The maintainer does not condone, support, or take responsibility for how these third-party tools are operated, deployed, updated, or maintained by their respective creators. Any execution of kernel-level modifications, jailbreaks, MDM configuration installations, Shortcut actions, Package Managers, or unsandboxed file system modifications is performed strictly at the user's own risk. The maintainer is not liable for data loss, hardware instability, system boot loops, or security vulnerabilities resulting from external exploit implementations.
-
-This repository hosts no proprietary binary files, copyrighted enterprise profiles, encryption keys, or modified application bundles (.IPAs). Use these tools at your own discretion; data back-ups are highly recommended before invoking low-level system configuration writes.
+> ⚠️ Almost everything here works by abusing a real iOS bug (kernel r/w, sandbox escape, backup/restore quirks). That means real risk: bootloops, kernel panics, lost app data, or Apple closing the hole mid-way through you using it. Back up first, and only get these from the links below.
 
 ---
 
-## 🛠️ Advanced Customization, Tweaking & Jailbreak Utilities
-
-| Project Name | Supported Versions | Key Functionality & Exploit Vector | Official Open-Source Link |
-| :--- | :--- | :--- | :--- |
-| **cyanide-ios** | iOS 18.0+ | Advanced open-source **Tweak runner** designed to organize, queue, and deploy non-jailbreak modifications and tweaks directly to the device. | [GitHub Repository](https://github.com/zeroxjf/cyanide-ios) |
-| **FilzaJailedDS** | iOS 18.0 - 26.x | Powerful **unsandboxed** file manager utilizing modern kernel vulnerabilities to grant full **read/write (R/W)** root file system access on modern iOS versions. | [GitHub Repository](https://github.com/34306/FilzaJailedDS) |
-| **Dopamine** | iOS 15.0 - 16.6.1 / **iOS 18.x (A11 Specific)** | Advanced rootless jailbreak environment. Extended via community implementations to leverage the `DarkSword` exploit chain specifically on legacy A11 hardware running iOS 18 branches. | [GitHub Repository](https://github.com/opa334/Dopamine) |
-| **Accessible** | iOS 16.0+ | A jailed file system utility functioning entirely as an **iOS Shortcut**. It requires no exploits and safely enables browsing, viewing, and exporting hidden internal system apps and readable root partitions (e.g., `/System`). | [GitHub Repository](https://github.com/jailbreakdotparty/Accessible) |
-| **Lithium** | iOS 17.0+ | An advanced customization tool that functions strictly by utilizing MDM configuration profiles designed for **supervised devices** to toggle strict feature flags (hiding apps from all views, overriding notifications, system-wide preferences). | [GitHub Repository](https://github.com/jailbreakdotparty/Lithium) |
-| **Pancake Store** | iOS 15.0+ | Advanced third-party utility specialized as an **App Store app downgrader**, allowing users to fetch, deploy, and target legacy application versions. | [GitHub Repository](https://github.com/jailbreakdotparty/PancakeStore) |
-| **Lara** | iOS 17.0 - 18.7.1 / 26.0.x | Comprehensive iOS Toolbox using the non-persistent `DarkSword` kexploit. Fine-grained kernel offset modifications. | [GitHub Repository](https://github.com/rooootdev/lara) |
-| **Nugget** | iOS 17.0 - 26.0+ | The premier desktop-based MobileGestalt & Feature Flag customization suite. Tweak status bars, wallpapers, and internal UI flags via USB. | [GitHub Repository](https://github.com/leminlimez/Nugget) |
-| **SparseBox** | iOS 16.0 - 18.1b5 | On-device MobileGestalt manager, system app internal opener, and app limit bypass utility (requires FMI off). | [GitHub Repository](https://github.com/khanhduytran0/SparseBox) |
-| **SparseBoxPlus** | iOS 17.4 - 26.1+ | Community-driven refined iteration of SparseBox featuring an overhauled UI layout and modernized compliance updates. | [GitHub Distribution](https://github.com/jailbreakdotparty/SparseBoxPlus) |
-| **BlacklistBeGone** | iOS 16.0 - 18.0.1+ | Desktop automation script utilizing SparseRestore to swap certificate validity databases with directories, preventing revoke tracking. | [GitHub Repository](https://github.com/jailbreakdotparty/BlacklistBeGone) |
-| **Bridge** | iOS 16.0+ | Jailed internal system app launcher and asset extractor utility for auditing hidden core binaries. | [GitHub Distribution](https://github.com/jailbreakdotparty/Bridge) |
-| **dirtyZero** | iOS 16.0+ | Core development framework focusing on backup-layer property list injection techniques. (Supports iOS 18+ now). | [GitHub Distribution](https://github.com/jailbreakdotparty/dirtyZero) |
-| **Cowabunga Lite** | iOS 15.0 - 18.x+ | Desktop-driven backup modification manager. Customizes system configurations, icon themes, and control centers without on-device profiles. | [GitHub Repository](https://github.com/leminlimez/CowabungaLite) |
-
----
-
-## 🔒 Crucial Implementation Frameworks & Prerequisites
-
-To execute structural data writes via `SparseRestore` or desktop frameworks (`Nugget`, `Cowabunga Lite`), the following infrastructure configuration is uniformly mandated:
-
-1. **Find My iPhone (FMI):** Must be temporarily disabled during the automated backup restoration phase. It can be immediately re-enabled once the partial system database overwrite completes.
-2. **Device Connection Requirements:**
-   * **Windows Hosts:** Native Apple Devices App or legacy iTunes connection synchronization pipeline is required.
-   * **macOS / Linux Hosts:** Requires terminal integration with `pymobiledevice3`, `usbmuxd`, and proper python virtual environments (`venv`).
-3. **Supervised Status (Lithium):** Device supervision must be pre-configured via configuration payloads or computer utilities prior to executing Lithium's shortcuts.
-4. **Hardware Constraints:** Note that cutting-edge exploit structures (e.g., *FilzaJailedDS*, *Lara*, *Dopamine-DarkSword*) intentionally explicitly exclude A12+ or newer system architectures from specific features due to Pointer Authentication Codes (PAC) and Hardware Memory Tagging Extensions (MTE) unless stated otherwise by specific offset releases. Legacy systems bypass these microarchitectural lockouts.
+| Project | Supported Versions | What it does & how | Official Link |
+|---|---|---|---|
+| **Dopamine 3.0** | 18.0 – 18.7.1 (A8–A13, arm64) · 26.0 – 26.0.1 (A12/A13) | Full rootless semi-untethered jailbreak. This is also what covers A11 devices on iOS 18 (it's built into the main project now, not a separate community fork). | [GitHub](https://github.com/opa334/Dopamine) |
+ (status bar mods, icon themes, live wallpapers, etc.) without a persistent jailbreak.
+| **FilzaJailedDS** | 17.0 – 26.0.1 (except 18.7.2–18.7.7) | Unsandboxed file manager using the DarkSword exploit for root-level read/write access. Doesn't work on iPhone 17 series or M5 iPads (Apple's MTE blocks the exploit). | [GitHub](https://github.com/34306/FilzaJailedDS) |
+| **FilzaSlop** | 18.x, 26.x, 27 beta 1–4 | Fork of FilzaJailedDS that opens up more container/app-group/system-group access using several sandbox-escape PoCs. Access only lasts as long as the underlying bug is unpatched. | [GitHub](https://github.com/0xjohnnydev/FilzaSlop) |
+| **3105** | 17–18, 26.0–26.6.1, 27 beta (verified builds only) | Not a jailbreak — a native app-container browser, `.3105` patch manager, cache cleaner, and PosterBoard wallpaper tool. Kernel exploit use is opt-in. Needs an enterprise cert. | [GitHub](https://github.com/YangJiiii/3105) |
+| **Accessible** | 16.0+ (some features need 15.0–18.3.2) | Jailed filesystem utility built as an iOS Shortcut — no exploits at all, so no elevated access. Lets you browse `/System`, `/private/preboot`, open hidden internal apps, and pull your MobileGestalt. | [GitHub](https://github.com/jailbreakdotparty/Accessible) |
+| **Lithium** | 16.0+ | Customization tool that works entirely through MDM configuration profiles on a supervised device — hide apps from every view, kill notifications app-wide, custom lock screen text, custom fonts. No exploit, just abusing profiles meant for managed devices. | [GitHub](https://github.com/jailbreakdotparty/Lithium) |
+| **PancakeStore** | 16.4+ | App Store downgrader (fork of MuffinStoreJailed) — no exploit used, just abuses Apple's own download-history API. Currently flagged **EoL / non-functional** on its own repo due to Apple backend changes; watch the repo for whether it comes back. | [GitHub](https://github.com/jailbreakdotparty/PancakeStore) |
+| **Lara** | 17.0 – 18.7.1 · 26.0.x (M5 and A19 devices excluded) | iOS customization toolbox built on the DarkSword kexploit — MobileGestalt tweaks, Liquid Glass tweaks, kernel offset editing, SpringBoard customizer. Actively maintained, frequent updates. | [GitHub](https://github.com/rooootdev/lara) |
+| **Nugget** | up to 18.7.1 / 26.1 (BookRestore) | Desktop MobileGestalt & feature-flag suite over USB — Dynamic Island on any device, PosterBoard, region unlocks, etc. **Archived by its dev as of July 2026** — still works but explicitly should **not** be used on iOS 27 (Apple changed the partial-restore method it relies on). | [GitHub](https://github.com/leminlimez/Nugget) |
+| **SparseBox** | up to 18.1b5 | The original on-device MobileGestalt/SparseRestore toolbox. No longer maintained by its dev, who now recommends Nugget or SparseBoxPlus instead — kept here for reference. | [GitHub](https://github.com/khanhduytran0/SparseBox) |
+| **SparseBoxPlus** | 17.4 – 26.1 | Actively maintained fork of SparseBox using the BookRestore (`bl_sbx`) exploit instead. On-device MobileGestalt editor, subtype changer, iPadOS UI toggle. | [GitHub](https://github.com/jailbreakdotparty/SparseBoxPlus) |
+| **BlacklistBeGone** | 17.0 – 18.0.1 (permanently capped) | Clears the enterprise-cert blacklist/revoke database using SparseRestore, so sideloaded apps stop getting blocked. Dev has said this version will never support anything newer without a new file-write exploit. | [GitHub](https://github.com/jailbreakdotparty/BlacklistBeGone) |
+| **Bridge** | 16.0+ | Jailed internal system app launcher and bundle extractor — open and inspect hidden Apple system apps you can't normally reach. | [GitHub](https://github.com/jailbreakdotparty/Bridge) |
+| **dirtyZero** | 16.0 – 18.7.1 · 26.0 – 26.0.1 | Customization toolbox that uses various exploits to zero out file memory for its tweaks. Actively getting new tweaks and UI passes. | [GitHub](https://github.com/jailbreakdotparty/dirtyZero) |
+| **Cowabunga Lite** | mainly 15.0 – 17.x | Desktop backup-modification tool for icon themes, control center, and system config changes. **Archived since Feb 2024** — most of what it did on newer iOS has been superseded by Nugget, Lithium, and SparseBoxPlus. Kept here since it's still what a lot of guides reference. | [GitHub](https://github.com/leminlimez/CowabungaLite) |
 
 ---
 
-## 📡 Community Integration Node
+## ⚠️ A word of caution: fake "online jailbreaks"
 
-For bleeding-edge testing binaries, direct workflow logs, and uncompiled alpha/beta builds (such as active *dirtyZero 1.4 betas* or raw *PocketPoster* configurations), consult the core developer network index:
+If you see something promising a jailbreak "straight from Safari, no computer needed" — NekoJB Online, zJailbreak, XIXtract, Hacksnow, misaka26, that kind of thing — be careful. Security researchers (Corellium, among others) have shown these don't actually jailbreak anything. They just install a configuration profile with a root certificate that redirects you to an ad-funded third-party app store. Skip these.
 
-
----
-*Trademarks: iOS, iPadOS, Shortcuts, CoreTrust, Filza, Cyanide, and Dopamine are legal property of Apple Inc. and their respective original developers. This independent documentation directory maintains no corporate affiliation, endorsement, or responsibility regarding the external developers, third-party repositories, or their specific software actions.* 
