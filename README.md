@@ -9,7 +9,6 @@ A running list of jailbreak and jailbreak-adjacent customisation tools that actu
 | Project | Supported Versions | What it does & how | Official Link |
 |---|---|---|---|
 | **Dopamine 3.0** | 18.0 – 18.7.1 (A8–A13, arm64) · 18 – 26.0.1 (A12/A13) | Full rootless semi-untethered jailbreak. This is also what covers A11 devices on iOS 18 (it's built into the main project now, not a separate community fork). | [GitHub](https://github.com/opa334/Dopamine) |
- (status bar mods, icon themes, live wallpapers, etc.) without a persistent jailbreak.
 | **FilzaJailedDS** | 17.0 – 26.0.1 (except 18.7.2–18.7.7) | Unsandboxed file manager using the DarkSword exploit for root-level read/write access. Doesn't work on iPhone 17 series or M5 iPads (Apple's MTE blocks the exploit). | [GitHub](https://github.com/34306/FilzaJailedDS) |
 | **FilzaSlop** | 18.x, 26.x, 27 beta 1–4 | Fork of FilzaJailedDS that opens up more container/app-group/system-group access using several sandbox-escape PoCs. Access only lasts as long as the underlying bug is unpatched. | [GitHub](https://github.com/0xjohnnydev/FilzaSlop) |
 | **3105** | 17–18, 26.0–26.6.1, 27 beta (verified builds only) | Not a jailbreak — a native app-container browser, `.3105` patch manager, cache cleaner, and PosterBoard wallpaper tool. Kernel exploit use is opt-in. Needs an enterprise cert. | [GitHub](https://github.com/YangJiiii/3105) |
